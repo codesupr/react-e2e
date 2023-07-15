@@ -4,6 +4,12 @@ cache: npm
 
 script:
   - npm i
-  - npm run build
   - npx playwright install --with-deps
   - npm run test:e2e
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
