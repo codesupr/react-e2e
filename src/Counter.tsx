@@ -19,7 +19,7 @@ function Counter() {
                 <p>Explore the React counter</p>
                 <div>
                     <button onClick={() => setCount(prevCount => prevCount <= 0 ? 0 : prevCount - 1)}>-</button>
-                    <p>{count}</p>
+                    <p data-testid='Count'>{count}</p>
                     <button onClick={() => setCount(count + 1)}>+</button>
                 </div>
             </header>

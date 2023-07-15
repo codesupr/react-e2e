@@ -1,0 +1,9 @@
+languages: node_js
+node_js: 16.20.0
+cache: npm
+
+script:
+  - npm i
+  - npm run build
+  - npx playwright install --with-deps
+  - npm run test:e2e

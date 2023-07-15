@@ -23,11 +23,11 @@ const LoginPage = () => {
             <form onSubmit={handleSubmit}>
                 <div className="input-container">
                     <label>Username </label>
-                    <input type="text" name="userName" required value={userName} onChange={(e) => setUserName(e.target.value)} />
+                    <input placeholder='User name' type="text" name="userName" required value={userName} onChange={(e) => setUserName(e.target.value)} />
                 </div>
                 <div className="input-container">
                     <label>Password </label>
-                    <input type="password" name="pass" required value={pass} onChange={(e) => setPass(e.target.value)} />
+                    <input placeholder='Password' type="password" name="pass" required value={pass} onChange={(e) => setPass(e.target.value)} />
                 </div>
                 <button className="button-container">Submit</button>
             </form>
